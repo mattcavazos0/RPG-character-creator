@@ -1,3 +1,8 @@
+##### RPG Character Creator #######
+# TODO warrior class and elif statement don't work
+# only wizard
+
+
 class Wizard():
 	def __init__(self):
 		self.title = "Wizard"
@@ -6,6 +11,7 @@ class Wizard():
 
 class Warrior():
 	def __init__(self):
+		self.title = "Warrior"
 		self.strength = 8
 		self.wisdom = 2
 
@@ -28,6 +34,14 @@ while player.char_class == "":
 		
 if player.char_class.lower() == "wizard":
 	player.char_class = Wizard()
+
+elif player.char_class.lower() == "warrior":
+	player.char_class = Warrior()
+
+else:
+	print("Not a valid entry")
+	exit()
+
 
 
 print("You are a " +player.char_class.title)
