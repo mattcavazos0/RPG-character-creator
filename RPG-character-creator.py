@@ -1,6 +1,5 @@
 ##### RPG Character Creator #######
-# TODO warrior class and elif statement don't work
-# only wizard
+# Fix circumstance for non-input/invalid input to go back to loop instead of exiting
 
 
 class Wizard():
